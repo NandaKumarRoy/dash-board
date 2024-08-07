@@ -1,0 +1,131 @@
+.primary-bg-grey {
+  background-color: #202028 !important;
+}
+
+.nav-search .navbar-toggler-icon {
+  display: none;
+}
+
+.box-shadow-none {
+  box-shadow: none !important;
+}
+
+.hover-none:hover {
+  color: initial !important;
+}
+
+.side-nav-icon {
+  color: #fff !important;
+  position: relative;
+  &.active:before {
+    content: '';
+    display: block;
+    background-color: #6E92F7;
+    width: 2px;
+    position: absolute;
+    left: 0px;
+    top: 6px;
+    bottom: 6px;
+    border-radius: 4px;
+  }
+
+  i {
+    &:last-child {
+      display: none;
+    }
+  }
+
+  &.active {
+    color: #6E92F7 !important;
+    background-color: unset !important;
+
+
+    i {
+      &:first-child {
+        display: none;
+      }
+
+      &:last-child {
+        display: block;
+      }
+    }
+  }
+
+  &:hover {
+    color: #6E92F7 !important;
+    background-color: unset !important;
+  }
+}
+
+.slim-scroll::-webkit-scrollbar {
+  width: 4px;
+  /* Width of the entire scrollbar */
+  height: 4px;
+  border-radius: 8px;
+}
+
+.slim-scroll::-webkit-scrollbar-track {
+  background: transparent;
+  /* Background of the scrollbar track */
+  border-radius: 10px;
+}
+
+.slim-scroll::-webkit-scrollbar-thumb {
+  background: transparent;
+  /* Color of the scrollbar thumb */
+  border-radius: 10px;
+}
+
+.slim-scroll:hover::-webkit-scrollbar-thumb {
+  background: #373737;
+  /* Color of the scrollbar thumb */
+  border-radius: 10px;
+}
+
+.table-transparent {
+  th {
+    background-color: #202028 !important;
+    border-bottom: 1px solid #393939;
+    color: #ffffff !important;
+    padding: 16px !important;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+
+  td {
+    background-color: transparent !important;
+    border-bottom: 1px solid #393939;
+    color: #ffffff !important;
+    padding: 16px !important;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+}
+
+.status {
+  border-radius: 16px;
+  display: inline-block;
+  padding: 4px 12px;
+}
+
+.delivered {
+  color: #00C68B !important;
+  background-color: #1A5348;
+  /* display: block; */
+}
+
+.cancelled {
+  color: #E55A61;
+  background-color: #5B3236;
+  /* display: block; */
+}
+
+.orderTable {
+  height: 450px;
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .orderTable {
+    height: 210px;
+  }
+}
